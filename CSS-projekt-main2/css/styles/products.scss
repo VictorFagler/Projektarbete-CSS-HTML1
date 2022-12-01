@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap');
+$clr-primary: white;
+$clr-secondary: rgb(248, 110, 17);
+$clr-offset: black;
+$clr-offset2: rgb(22, 22, 22);
+$font-primary: 'Anton', sans-serif;
+$font-snd:'Josefin Sans', sans-serif;
+
+h3{
+    text-align: center;
+    font-size:2.2rem; 
+    padding:.7rem 0;
+    padding-bottom:.3rem;
+    color: $clr-primary;
+    text-transform: uppercase;
+    border-radius: 30%;
+    background: linear-gradient(135deg,$clr-offset2 15%, $clr-secondary, $clr-offset2 85%);
+    margin-bottom:20px;
+    font-family: $font-snd;
+    
+}
+a{
+    text-decoration: none;
+}
+.gallery{
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin:90px 0;
+}
+.content{
+    background:$clr-offset2;
+    width:25%;
+    margin:25px 20px;
+    box-sizing: border-box;
+    float:left;
+    text-align: center;
+    border-radius: 20px;
+    cursor:pointer;
+    padding-top: 10px;
+    box-shadow: 0px 5px 5px 5px rgba(255, 255, 255, 0.274), 
+    0 10px 10px rgba(255, 255, 255, 0.438);
+    transition: .4s;
+    &:hover{
+        box-shadow: 0 3px 6px rgba(255, 255, 255, 0.377),
+        0 3px 6px rgb(255, 115, 0);
+        transform: translate(0px, -5px);
+        
+    }
+}
+
+.content p{
+    text-align: center;
+    color: $clr-primary;
+    padding:0 20px 20px 0;
+    font-family: $font-snd;
+}
+.content h6{
+    font-size: 2rem;
+    // text-align: center;
+    color: $clr-primary;
+}
+.content ul{
+    list-style:none;
+    display:flex;
+    justify-content: center;
+    margin: 5px 0 10px 0px;
+}
+.content li{
+    padding:2px;
+}
+.content .fa {
+    font-size: 24px;
+    transition: .4s;
+    margin: 5px;
+    &:hover{
+        transform: scale(1.35);
+        transition: .3s;
+    }
+}
+.checked{
+    color:yellow;
+}
+
+.content button{
+    padding: 10px;
+    text-transform: uppercase;
+    color:$clr-secondary;
+    font-size:1.5rem;
+    width:100%;
+    border:0;
+    outline:none;
+    cursor: pointer;
+    margin-top:5px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background:rgb(207, 207, 207);
+    &:hover{
+        background:rgb(248, 110, 17);
+        color:$clr-primary
+    }
+}
+@media(max-width:1000px)
+{
+    .content{
+        width: 45%;
+        max-width: 300px;
+    }
+}
+@media(max-width:750px){
+    .content{
+        max-width: 300px;
+        min-width: 230px;
+    }
+}
+

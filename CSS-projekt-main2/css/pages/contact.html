@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/contacts.css">
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="../script.js" defer></script>
+
+    <title>Compeasy</title>
+</head>
+
+<body>
+    <!-- <header> -->
+    <nav class="navbar">
+        <div class="brand-title"> <a href="index.html"><img src="../Images/comp.jpg" alt="logo" class="logo"></a></div>
+        <a href="#" id="hamburger" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div id="navbar-links" class="navbar-links">
+            <ul>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="background">
+        <div class="section">
+            <h1>contact</h1>
+        </div>
+        <section id="contact">
+            <div class="contact-box">
+                <!--heading---------->
+                <div class="c-heading">
+                    <h3 class="underline">Contact</h3>
+                    <p>Call Or Email Us Regarding Question Or Issues</p>
+                </div>
+                <!--inputs------------------>
+                <div class="c-inputs">
+                    <form>
+                        <input type="text" placeholder="Full Name" />
+                        <input type="email" placeholder="Example@gmail.com" />
+                        <div class="select">
+                            <select>
+                              <option value="0" class="selector">Subject:</option>
+                              <option value="1">Support</option>
+                              <option value="2">Order</option>
+                              <option value="3">Product</option>
+                              <option value="3">Other..</option>
+                            </select>
+                          </div>
+                        <textarea name="message" placeholder="Write Message"></textarea>
+                        <!--sumbit-btn----------->
+                        <button>SEND</button>
+                    </form>
+                </div>
+
+
+                <!--map------------------->
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.5617801011767!2d18.050307116286312!3d59.340269817187206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d658601ba9f%3A0x38032356cedabd0e!2sKungstensgatan%2044%2C%20113%2059%20Stockholm!5e0!3m2!1ssv!2sse!4v1669898891801!5m2!1ssv!2sse" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="index.html"><img src="../Images/comp.jpg" alt="logo" class="logo"></a>
+            <p class="footer-links">
+                <a href="#" class="link-1">Home </a>
+                <a href="#">Pricing </a>
+                <a href="#">Refence </a>
+                <a href="#">Contact </a>
+                <a href="#">About </a>
+            </p>
+            <p class="footer-company-name">Compeasy © 2022</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>44A. Kungsstensgatan</span> Stockholm, Sweden</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+46 760 906 950</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">support@compeasy.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nemo mollitia consequatur earum animi
+                quae
+                commodi iste minima delectus obcaecati.
+            </p>
+
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

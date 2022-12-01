@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap");
+.background {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.login {
+  letter-spacing: 1px;
+  height: 540px;
+  width: 380px;
+  background-color: rgb(22, 22, 22);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  border: 1px solid rgb(248, 110, 17);
+  box-shadow: 0 0 40px rgb(248, 110, 17);
+  padding: 50px 35px;
+}
+.login h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.login label {
+  text-transform: uppercase;
+}
+.login button {
+  text-transform: uppercase;
+  margin-top: 50px;
+  width: 100%;
+  background-color: rgb(248, 110, 17);
+  color: white;
+  padding: 15px 0;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.login button:hover {
+  background: white;
+  color: rgb(248, 110, 17);
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgb(248, 110, 17);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+::-moz-placeholder {
+  color: rgba(229, 229, 229, 0.7725490196);
+}
+
+:-ms-input-placeholder {
+  color: rgba(229, 229, 229, 0.7725490196);
+}
+
+::placeholder {
+  color: rgba(229, 229, 229, 0.7725490196);
+}
+
+.register {
+  position: absolute;
+  border-radius: 15px;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.register:hover {
+  background: white;
+  color: rgb(248, 110, 17);
+}/*# sourceMappingURL=login.css.map */

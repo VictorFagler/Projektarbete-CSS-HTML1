@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap');
+$clr-primary: white;
+$clr-secondary: rgb(248, 110, 17);
+$clr-offset: black;
+$clr-offset2: rgb(36, 35, 35);
+$font-primary: 'Anton', sans-serif;
+$font-snd:'Josefin Sans', sans-serif;
+
+.background{
+    position: relative;
+    height: 100vh;
+    width:100%;
+	align-items: center;
+	justify-content: center;
+}
+
+
+ #contact{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+    border: 1px solid $clr-secondary;
+    box-shadow: 2px 0px 15px $clr-secondary;
+    border-radius: 30px;
+    overflow: hidden;	
+}
+.contact-box{
+	background-color: $clr-offset2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.c-heading h3{
+	font-size: 2.5rem;
+	padding:0 2rem 0rem 3rem;
+}
+.c-heading p{
+	font-size: 0.8rem;
+    padding:2rem;
+	font-weight: lighter;
+	text-align: center;
+}
+.c-inputs{
+	margin: 15px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.c-inputs input{
+    display:flex;
+	width:100%;
+	height: 30px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid $clr-secondary;
+	outline: none;
+	margin: 10px 0px;
+	padding: 5px;
+	box-sizing: border-box;
+}
+.c-inputs textarea{
+	width:100%;
+	height: 200px;
+	outline: none;
+	background-color: transparent;
+	border:1px solid $clr-secondary;
+	color: #f4f4f4;
+	padding: 10px;
+	font-size: 1.2rem;
+	box-sizing: border-box;
+}
+select{
+	border:3px solid red;
+	display:flex;
+	width: 100%;
+	height: 45px;
+	background: transparent;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+		option{
+			background: $clr-offset2;
+		}
+		:first-child {
+			display: none;
+		}
+		
+	}
+
+.c-inputs button{
+	width:100%;
+	height: 40px;
+	background-color: orange;
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+	letter-spacing: 1px;
+    cursor: pointer;
+}
+.c-inputs input:focus{
+	border-bottom: 1px solid $clr-primary;
+	transition: all ease 0.6s;
+}
+.c-inputs textarea:focus{
+	border: none;
+	border: 1px solid $clr-primary;
+	transition: all ease 0.6s;
+	
+}
+
+.map{
+    margin-left:50px;
+    display:flex;
+    width:400px;
+    height:100%;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    overflow: hidden; 
+    border-left: 2px solid $clr-secondary;
+
+}
+@media(max-width:1000px){
+    .background{
+		margin-top:100px;
+        margin-bottom:150px;
+		
+	  h1{
+		display:none;
+	  }
+    }
+    .contact-box{
+		width: 100%;
+        flex-direction: column;
+    }
+	form{
+		width: 100%;
+	}
+    .map{
+		height: 250px;
+        border-top-right-radius: 0;
+        margin:15px 0 0 -30px ;
+        border-top: 2px solid $clr-secondary;
+
+    }
+	h3{
+		margin: 15px;
+	}
+}
+
+ 

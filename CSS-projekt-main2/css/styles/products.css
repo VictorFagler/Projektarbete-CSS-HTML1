@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&display=swap");
+h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 0.7rem 0;
+  padding-bottom: 0.3rem;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 30%;
+  background: linear-gradient(135deg, rgb(22, 22, 22) 15%, rgb(248, 110, 17), rgb(22, 22, 22) 85%);
+  margin-bottom: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gallery {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 0;
+}
+
+.content {
+  background: rgb(22, 22, 22);
+  width: 25%;
+  margin: 25px 20px;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+  box-shadow: 0px 5px 5px 5px rgba(255, 255, 255, 0.274), 0 10px 10px rgba(255, 255, 255, 0.438);
+  transition: 0.4s;
+}
+.content:hover {
+  box-shadow: 0 3px 6px rgba(255, 255, 255, 0.377), 0 3px 6px rgb(255, 115, 0);
+  transform: translate(0px, -5px);
+}
+
+.content p {
+  text-align: center;
+  color: white;
+  padding: 0 20px 20px 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.content h6 {
+  font-size: 2rem;
+  color: white;
+}
+
+.content ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 5px 0 10px 0px;
+}
+
+.content li {
+  padding: 2px;
+}
+
+.content .fa {
+  font-size: 24px;
+  transition: 0.4s;
+  margin: 5px;
+}
+.content .fa:hover {
+  transform: scale(1.35);
+  transition: 0.3s;
+}
+
+.checked {
+  color: yellow;
+}
+
+.content button {
+  padding: 10px;
+  text-transform: uppercase;
+  color: rgb(248, 110, 17);
+  font-size: 1.5rem;
+  width: 100%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  margin-top: 5px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: rgb(207, 207, 207);
+}
+.content button:hover {
+  background: rgb(248, 110, 17);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    width: 45%;
+    max-width: 300px;
+  }
+}
+@media (max-width: 750px) {
+  .content {
+    max-width: 300px;
+    min-width: 230px;
+  }
+}/*# sourceMappingURL=products.css.map */
